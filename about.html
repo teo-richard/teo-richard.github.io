@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About · Teo Richard</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .about-sidebar {}
+    .avatar-placeholder {
+      width: 100%;
+      aspect-ratio: 1;
+      background: var(--accent-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .sidebar-detail {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .sidebar-detail strong {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text);
+      margin-bottom: 0.1rem;
+    }
+    @media (max-width: 640px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .avatar-placeholder { max-width: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-name" href="index.html">Teo Richard</a>
+  <ul class="nav-links">
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="tidytuesday.html">Tidy Tuesday</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="wtp.html">WTP</a></li>
+    <li><a href="energy.html">Energy</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <h1>About Me</h1>
+    <p>A little background on who I am and what I do.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-sidebar">
+      <div class="avatar-placeholder">🙂</div>
+      <!-- Replace the emoji above with an <img> tag once you have a photo:
+           <img src="photo.jpg" style="width:100%;border-radius:8px;"> -->
+      <div class="sidebar-detail">
+        <strong>Location</strong>
+        Davis, CA
+      </div>
+      <div class="sidebar-detail" style="margin-top:0.75rem;">
+        <strong>Skills</strong>
+        R, ggplot2, Python, Data Visualization
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>
+        Hi, I'm Teo. I'm a data analyst with a focus on research, visualization, and
+        turning messy data into clear insights. I'm based in Davis, CA.
+      </p>
+      <p>
+        <!-- Add your own background here -->
+        [Add a sentence or two about your background — your degree, field of study, or work experience.]
+      </p>
+
+      <h2>What I work on</h2>
+      <p>
+        My work spans several areas including energy policy, consumer behavior research,
+        and data visualization. I participate in <a href="tidytuesday.html" style="color:var(--accent)">Tidy Tuesday</a>
+        to sharpen my visualization skills with real-world datasets.
+      </p>
+
+      <h2>Skills &amp; Tools</h2>
+      <div class="tags">
+        <span class="tag">R</span>
+        <span class="tag">ggplot2</span>
+        <span class="tag">tidyverse</span>
+        <span class="tag">Python</span>
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Statistical Analysis</span>
+        <span class="tag">GitHub</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Teo Richard · Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>
