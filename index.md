@@ -80,11 +80,10 @@ show_header: false
 </style>
 
 <div class="hero">
-  <p class="hero-eyebrow">Data Analyst &amp; Researcher</p>
+  <p class="hero-eyebrow">Student at the University of California, Davis</p>
   <h1>Teo<br/><em>Richard</em></h1>
   <p class="hero-desc">
-    I work at the intersection of data, research, and visualization —
-    turning complex datasets into clear, compelling stories.
+    I am pursuing a major in economics and statistics. In my free time, I am trying to learn how to crochet and want to rewatch all the James Bond movies. 
   </p>
   <div class="hero-links">
     <a href="/projects" class="btn btn-primary">View My Work</a>

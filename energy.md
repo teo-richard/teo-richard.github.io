@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Energy Poverty Project
-description: Exploring energy access disparities and their social and policy implications.
+description: In progress: Investigating which households will be at risk of falling into energy poverty as the climate changes. 
 permalink: /energy
 ---
 
-**Type:** Research Project &nbsp;|&nbsp; **Tools:** R, Python &nbsp;|&nbsp; **Year:** 2024
+**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** Python &nbsp;|&nbsp; **Year:** 2026
 
 ---
 

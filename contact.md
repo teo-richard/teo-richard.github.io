@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-description: Feel free to reach out about research, collaboration, or opportunities.
+description: Feel free to reach out about anything. If you email me and ask for a compliment I will give you a good one.
 permalink: /contact
 ---
 
@@ -10,7 +10,7 @@ permalink: /contact
     <div class="contact-icon">✉️</div>
     <div>
       <div style="font-weight:500; margin-bottom:0.1rem;">Email</div>
-      <div style="font-size:0.82rem; color:var(--muted);">your@email.com</div>
+      <div style="font-size:0.82rem; color:var(--muted);">tlrichard@email.com</div>
     </div>
   </a>
   <a class="contact-link" href="https://github.com/teo-richard" target="_blank">
@@ -24,7 +24,7 @@ permalink: /contact
     <div class="contact-icon">💼</div>
     <div>
       <div style="font-weight:500; margin-bottom:0.1rem;">LinkedIn</div>
-      <div style="font-size:0.82rem; color:var(--muted);">linkedin.com/in/yourprofile</div>
+      <div style="font-size:0.82rem; color:var(--muted);">linkedin.com/in/teorichard/</div>
     </div>
   </a>
 </div>

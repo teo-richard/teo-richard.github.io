@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Willingness to Pay Project
-description: Analyzing consumer valuation and demand using economic and statistical methods.
+description: Which variables affect demand for air quality forecasing? Subjects in Lahore, Pakistan are asked if they prefer a government or private source for air quality forecasting SMS texts.
 permalink: /wtp
 ---
 
-**Type:** Research Project &nbsp;|&nbsp; **Tools:** R, ggplot2 &nbsp;|&nbsp; **Year:** 2024
+**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** R &nbsp;|&nbsp; **Year:** 2025-2026
 
 ---
 

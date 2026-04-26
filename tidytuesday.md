@@ -5,7 +5,7 @@ description: Weekly data visualization challenges using R and ggplot2.
 permalink: /tidytuesday
 ---
 
-Each week I explore a new dataset from the [TidyTuesday project](https://github.com/rfordatascience/tidytuesday) and create a visualization using R.
+Each week (maybe not quite each week) I explore a new dataset from the [TidyTuesday project](https://github.com/rfordatascience/tidytuesday) and create a visualization using R.
 
 ---
 

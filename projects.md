@@ -13,7 +13,17 @@ permalink: /projects
 ## Data Visualizations
 
 - [Tidy Tuesday](/tidytuesday) — Weekly visualization challenges in R
+- 
+## MiniGit
+
+- A mini-version of Git, inspired by UC Berkeley's CS61B Gitlet. I aspired to make mine slightly more complex.
+
+## Dog... something?
+
+- This is a secret! Check back later for more.
 
 ---
 
-*More projects coming soon.*
+*Stay tuned... More stuff coming soon.*
+
+*Watch out for my senior thesis project which I will start this fall. Spoiler: it involves chess!*
