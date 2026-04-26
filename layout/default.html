@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title }} · Teo Richard</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-name" href="/">Teo Richard</a>
+  <ul class="nav-links">
+    <li><a href="/about" {% if page.url == '/about' %}class="active"{% endif %}>About</a></li>
+    <li><a href="/tidytuesday" {% if page.url == '/tidytuesday' %}class="active"{% endif %}>Tidy Tuesday</a></li>
+    <li><a href="/projects" {% if page.url == '/projects' %}class="active"{% endif %}>Projects</a></li>
+    <li><a href="/wtp" {% if page.url == '/wtp' %}class="active"{% endif %}>WTP</a></li>
+    <li><a href="/energy" {% if page.url == '/energy' %}class="active"{% endif %}>Energy</a></li>
+    <li><a href="/contact" {% if page.url == '/contact' %}class="active"{% endif %}>Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  {% if page.show_header != false %}
+  <div class="page-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  </div>
+  {% endif %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Teo Richard · Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>

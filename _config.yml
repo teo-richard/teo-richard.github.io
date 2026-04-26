@@ -1,0 +1,19 @@
+title: Teo Richard
+description: Data analyst & portfolio
+url: "https://teo-richard.github.io"
+
+# Use no theme — we're using our own custom layout
+theme: null
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Don't process these
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
