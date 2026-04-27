@@ -1,11 +1,11 @@
 ---
 layout: default
 title: About Me
-description: A little background on who I am and what I do.
+description: 
 permalink: /about
 ---
 
-Hi, I'm Teo. I'm a student at the University of California, Davis. I am purusing a double major in economics and statistics. 
+Hi, I'm Teo. I am living life in Davis, hanging with the cows,  eating plenty of frozen yogurt, and petting stray cats. Shoot me an email for a picture of some cute strays.
 
 Upcoming life events:
 - Studying abroad at the LSE this summer!
@@ -17,13 +17,14 @@ I am interested in economics relating to pretty much anything, but especially tr
 
 ## Skills & Tools
 
-- **Languages:** R (ggplot2, tidyverse), Python (matplotlib, numby, scikit-learn)
+- **Languages:** R (ggplot2, tidyverse), Python (pandas, polars, matplotlib, numpy, scikit-learn)
 - **Models I've Used:** OLS, Logistic Regression, Causal Forest, LightGBM, XGBoost, Differences-in-Differences
 - **Other:** GitHub, Markdown, Proficiency with LLMs
 
 ## Education
 
-[Your degree, institution, year]
+- University of California, Davis (GPA 3.9/4.0), expected graduation December 2027
+  - Economics & Statistics
 
 ## Experience
 
@@ -34,7 +35,6 @@ I am interested in economics relating to pretty much anything, but especially tr
 
 
 <div>
-  </a>
   <a class="contact-link" href="https://linkedin.com/in/yourprofile" target="_blank">
     <div class="contact-icon">💼</div>
     <div>

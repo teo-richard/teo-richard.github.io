@@ -5,7 +5,7 @@ description: Which variables predict demand for air quality forecasting? Househo
 permalink: /aq-wtp
 ---
 
-**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** R &nbsp;|&nbsp; **Year:** 2025–2026
+**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** R (tidyverse, grf) &nbsp;|&nbsp; **Year:** 2025–2026
 
 ---
 
@@ -49,28 +49,28 @@ Causal forests (via the `grf` package, 4,000 trees with honest splitting) were u
 
 ## Key Findings
 
-**Source attribution dominates relative preferences — and the effect is very large.**
+### **Source attribution dominates relative preferences — and the effect is very large.**
 
-The treatment (EPD vs. PAQI attribution) alone explains **42.4% of variance** in relative WTP. All demographic, behavioral, and household variables combined explain only **7.1%** — roughly 6× less. Adding those covariates to the treatment model raises R² by only 3.6 percentage points.
+The treatment (EPD vs. PAQI attribution) alone explains **42.4% of variance** in relative WTP. All demographic, behavioral, and household variables combined explain only **7.1%** which is roughly 6× less. Adding those covariates to the treatment model raises R² by only 3.6 percentage points.
 
-The treatment coefficient is approximately **−32 PKR**: households assigned to EPD attribution are willing to pay 32 PKR more for EPD relative to PAQI than households assigned to PAQI attribution. Standardized, this is a **Cohen's d of 1.71** (95% CI: [1.56, 1.86]) — more than twice the conventional threshold of 0.8 for a "large" effect, and stable across 1,000 bootstrap samples (mean −32.2 ± 1.6 PKR).
+The treatment coefficient is approximately **−32 PKR**: households assigned to EPD attribution are willing to pay 32 PKR more for EPD relative to PAQI than households assigned to PAQI attribution. Standardized, this is a **Cohen's d of 1.71** (95% CI: [1.56, 1.86]). This is more than twice the conventional threshold of 0.8 for a "large" effect, and stable across 1,000 bootstrap samples (mean −32.2 ± 1.6 PKR).
 
 <img src="/wtp/treatment_effect_distr.png" alt="Treatment Effect Distributions" style="max-width:100%;">
 <p><em>Density distributions of relative WTP shifted by the estimated treatment effect. The clear separation illustrates that the treatment-induced preference gap exceeds the natural variation in preferences across the population.</em></p>
 
-**Treatment does not affect absolute or total WTP.**
+### **Treatment does not affect absolute or total WTP.**
 
 Treatment explains less than 2% of variance in absolute WTP for either service, and essentially zero variance in total WTP (R² ≈ 0, p = 0.831). Source attribution shifts *which* service households prefer, but not how much they are willing to spend overall on air quality forecasting.
 
-**Few variables consistently predict absolute WTP.**
+### **Few variables consistently predict absolute WTP.**
 
 No demographic, economic, or behavioral variable robustly predicts absolute WTP across treatment groups. This negative finding is consistent across OLS, Lasso, and Spike-and-Slab, strengthening confidence that it is not a modeling artifact.
 
-**Machine learning variable selection did not outperform OLS.**
+### **Machine learning variable selection did not outperform OLS.**
 
 Lasso either matched or underperformed standard OLS. For relative WTP, OLS achieved R² = 0.609–0.669 versus Lasso's 0.558–0.648. Regularization and automated variable selection offered no advantage here.
 
-**Treatment effects vary systematically by income, location, and prior attitudes.**
+### **Treatment effects vary systematically by income, location, and prior attitudes.**
 
 Causal forests revealed meaningful heterogeneity. The top moderators and their share of treatment effect variation:
 
@@ -88,7 +88,7 @@ Together, these three variables explain approximately **54–58% of treatment ef
 <img src="/wtp/work_hrs_whitebg.png" alt="Treatment Effect by Work Hours" style="max-width:100%;">
 <p><em>Treatment effect by work hours quartile. Households working more hours (higher income) show larger preference shifts toward EPD when exposed to EPD forecasting. Error bars are 95% confidence intervals.</em></p>
 
-**Binary preferences show near-perfect separation.**
+### **Binary preferences show near-perfect separation.**
 
 Logistic regression predicting binary EPD vs. PAQI preference found near-complete separation: EPD-treated households have approximately a 97% probability of preferring EPD; PAQI-treated households have approximately a 5% probability of preferring EPD.
 
@@ -99,11 +99,11 @@ Logistic regression predicting binary EPD vs. PAQI preference found near-complet
 
 ## Policy Implications
 
-- **Expanding access to government air quality forecasting may be more effective than expected.** Source attribution alone — with identical content — generates a preference shift with a Cohen's d of 1.71. Free trials or subsidized access to EPD forecasting could durably shift household preferences toward the government service, potentially at low cost.
+- **Expanding access to government air quality forecasting may be more effective than expected.** Source attribution alone, with identical content, generates a preference shift with a Cohen's d of 1.71. Free trials or subsidized access to EPD forecasting could durably shift household preferences toward a specific service, potentially at low cost.
 
 - **The mechanism appears to be preference formation, not demand creation.** Because treatment does not increase total WTP, the implication is that people already have a budget for this type of service; exposure changes which provider they allocate it to. Communication campaigns focused on awareness may be sufficient to redirect preferences.
 
-- **Targeting strategies should account for heterogeneity.** Higher-income households (proxied by work hours) and those with positive baseline government approval respond most strongly to EPD-attributed forecasting. Lower-income households and those with lower government trust may require different messaging — or may be better served by a citizen-run provider like PAQI that does not rely on government credibility.
+- **Targeting strategies should account for heterogeneity.** Higher-income households (proxied by work hours) and those with positive baseline government approval respond most strongly to EPD-attributed forecasting. Lower-income households and those with lower government trust may require different messaging or may be better served by a citizen-run provider like PAQI that does not rely on government credibility.
 
 - **Geographic variation warrants attention.** Shalamar and City Center show meaningfully different treatment effect magnitudes, suggesting that uniform communication strategies may not be optimal across different urban sub-areas.
 
@@ -115,9 +115,9 @@ Logistic regression predicting binary EPD vs. PAQI preference found near-complet
 
 - **Stated WTP may not reflect actual behavior.** The BDM (Becker-DeGroot-Marschak) elicitation mechanism is designed to be incentive-compatible, but respondents' stated valuations in a survey context may still deviate from real purchasing decisions.
 
-- **Large treatment effect warrants scrutiny.** An effect of this magnitude is rare in social science. A plausible concern is that respondents without strong prior preferences may anchor their WTP responses almost entirely to the most salient cue available — source attribution — rather than reflecting stable underlying preferences. If so, the effect may reflect anchoring rather than genuine preference formation, which could limit its persistence over time.
+- **Large treatment effect warrants scrutiny.** An effect of this magnitude is rare in social science. A plausible concern is that respondents without strong prior preferences may anchor their WTP responses almost entirely to the most salient cue available (source attribution) rather than reflecting stable underlying preferences. If so, the effect may reflect anchoring rather than genuine preference formation, which could limit its persistence over time.
 
-- **Limited external validity.** The study is conducted in two tehsils of Lahore — a large, heavily polluted urban center. Findings may not generalize to smaller cities, rural areas, or different national contexts.
+- **Limited external validity.** The study is conducted in two tehsils of Lahore which is a large, heavily polluted urban center. Findings may not generalize to smaller cities, rural areas, or different national contexts.
 
 - **Selective inference was not feasible.** Post-selection inference via the Fixed Lasso method could not be included because package assumptions were not met and the package is no longer actively maintained.
 

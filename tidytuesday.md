@@ -11,7 +11,7 @@ Each week (maybe not quite each week) I explore a new dataset from the [TidyTues
 
 ## Week 1 · 2024 — Dataset Title
 
-Brief description of what you explored and what you found interesting.
+I have not started yet...
 
 ![Week 1 plot](images/tt-week01.png)
 
@@ -19,17 +19,18 @@ Brief description of what you explored and what you found interesting.
 
 ---
 
-## Week 2 · 2024 — Dataset Title
+<!-- 
+
+## Week X · 2026 — Dataset Title
 
 Brief description of what you explored and what you found interesting.
 
 ![Week 2 plot](images/tt-week02.png)
 
-[View code on GitHub](https://github.com/teo-richard)
+[View code on GitHub](https://github.com/teo-richard/xxxx)
 
 ---
 
-<!-- 
 HOW TO ADD A NEW WEEK:
 1. Upload your plot PNG to the images/ folder in your repo
 2. Copy the block above (from ## Week X down to the ---)

@@ -5,34 +5,30 @@ description: In progress: Investigating which households will be at risk of fall
 permalink: /energy
 ---
 
-**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** Python &nbsp;|&nbsp; **Year:** 2026
+**Type:** Faculty-Supervised Research Project &nbsp;|&nbsp; **Tools:** Python (polars) &nbsp;|&nbsp; **Year:** 2026
 
 ---
 
 ## Overview
 
-[Describe the project — what aspect of energy poverty are you studying? What datasets did you use?]
+I would like to see which households are going to be at risk of falling into energy poverty as global climates shift and change. I am using NOAA data for current climate data and CMIP6 LOCA2 data at SSP4.5-7 for climate projections. I will merge this data with the American Housing Survey.
 
 ## Background
 
-[Provide context — why does this matter? What gap in the literature or policy are you addressing?]
-
-![Energy plot](images/energy-plot1.png)
+While this is mostly descriptive, it is quite important for policy because it will answer which households need more attention as temperatures change. 
 
 ## Methods
 
-[Describe your analytical approach — data sources, geographic scope, statistical methods.]
+Train LightGBM and XGBoost model using AHS + current climate data. I am doing both trees as a simple sanity check as they should return about the same results. Then predict energy poverty using these models and projected climate.
 
 ## Key Findings
 
-- Finding one
-- Finding two
-- Finding three
+TBD
 
 ## Policy Implications
 
-[What do your findings suggest for policy or practice?]
+TBD
 
 ## Code
 
-Full code available on [GitHub](https://github.com/teo-richard).
+Full code will be available on [GitHub](https://github.com/teo-richard).
