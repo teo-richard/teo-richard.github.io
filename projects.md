@@ -7,13 +7,14 @@ permalink: /projects
 
 ## Research Projects
 
-- [Willingness to Pay Project](/wtp) — Analyzing consumer valuation and demand
+- [Willingness to Pay Project](/aq-wtp) — Analyzing consumer valuation and demand
 - [Energy Poverty Project](/energy) — Exploring energy access disparities and policy implications
 
 ## Data Visualizations
 
 - [Tidy Tuesday](/tidytuesday) — Weekly visualization challenges in R
-- 
+  
+
 ## MiniGit
 
 - A mini-version of Git, inspired by UC Berkeley's CS61B Gitlet. I aspired to make mine slightly more complex.
