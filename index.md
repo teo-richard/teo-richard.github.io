@@ -41,8 +41,8 @@ show_header: false
   text-decoration: none;
   transition: all 0.2s;
 }
-.btn-primary { background: var(--accent); color: white; }
-.btn-primary:hover { background: #1e3f2a; }
+.btn-primary { background: var(--accent); color: white !important; }
+.btn-primary:hover { background: #1e3f2a; color: white !important; }
 .btn-outline { border: 1px solid var(--border); color: var(--text); background: var(--white); }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -99,7 +99,7 @@ show_header: false
       <h3>Tidy Tuesday</h3>
       <p>Weekly data visualization challenges.</p>
     </a>
-    <a class="feat-card" href="/wtp">
+    <a class="feat-card" href="/aq-wtp">
       <div class="feat-icon">💡</div>
       <h3>Willingness to Pay</h3>
       <p>Consumer valuation research.</p>

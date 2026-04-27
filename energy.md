@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Energy Poverty Project
-description: In progress: Investigating which households will be at risk of falling into energy poverty as the climate changes. 
+description: "In progress: Investigating which households will be at risk of falling into energy poverty as the climate changes."
 permalink: /energy
 ---
 
